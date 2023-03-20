@@ -108,19 +108,16 @@ learnJS("JS", function () {
   const lengthUser = person;
   console.log(lengthUser.length);*/
 
-const btns = document.querySelectorAll(".counter__btn");
+const btnPlus = document.querySelector(".counter__btn-plus");
+const btnMinus = document.querySelector(".counter__btn-minus");
+const counter = document.querySelector(".counter");
 
-btns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const direction = this.dataset.direction;
-    const inp = this.parentElement.querySelector(".counter__value");
-    const currentValue = +inp.value;
-    let newValue;
+let count = 0;
 
-    if (direction === "plus") {
-      newValue = currentValue + 1;
-    } else {
-    }
-    inp.value = newValue;
-  });
+btnPlus.addEventListener("click", (e) => {
+  btnPlus.textContent = ++count;
+});
+
+btnMinus.addEventListener("click", (e) => {
+  btnMinus.textContent = ++count;
 });
