@@ -1,4 +1,4 @@
-let numberOfFilms;
+/*let numberOfFilms;
 function start() {
   numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
@@ -69,4 +69,56 @@ function writeYouGenres() {
     personalMovieDB.genres[i - 1] = genere;
   }
 }
-writeYouGenres();
+writeYouGenres();*/
+
+/*function first() {
+  setTimeout(function () {
+    console.log(1);
+  }, 500);
+}
+
+function second() {
+  console.log(2);
+}
+first();
+second();
+
+function learnJS(lang, callback) {
+  console.log(`I lerning ${lang}`);
+  callback();
+}
+learnJS("JS", function () {
+  console.log("Hello world");
+});*/
+
+/*const users = [
+    { name: "John Doe", accessLevel: "admin" },
+    { name: "Jane Smith", accessLevel: "user" },
+    { name: "Bob Johnson", accessLevel: "user" },
+    { name: "Alice Brown", accessLevel: "admin" },
+  ];
+  
+  const admins = users.filter((user) => user.accessLevel === "admin");
+  const person = users.filter((user) => user.accessLevel === "user");
+  
+  console.log({ admins, person });
+  
+  const lengthAdmin = admins;
+  console.log(lengthAdmin.length);
+  const lengthUser = person;
+  console.log(lengthUser.length);*/
+
+const btnPlus = document.querySelector(".counter__btn-plus");
+const btnMinus = document.querySelector(".counter__btn-minus");
+const counter = document.querySelector(".counter");
+const countValue = document.querySelector(".counter__value");
+
+let count = 0;
+
+btnPlus.addEventListener("click", (e) => {
+  countValue.textContent = --count;
+});
+
+btnMinus.addEventListener("click", (e) => {
+  countValue.textContent = ++count;
+});
