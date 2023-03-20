@@ -1,4 +1,4 @@
-let numberOfFilms;
+/*let numberOfFilms;
 function start() {
   numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
@@ -69,4 +69,58 @@ function writeYouGenres() {
     personalMovieDB.genres[i - 1] = genere;
   }
 }
-writeYouGenres();
+writeYouGenres();*/
+
+/*function first() {
+  setTimeout(function () {
+    console.log(1);
+  }, 500);
+}
+
+function second() {
+  console.log(2);
+}
+first();
+second();
+
+function learnJS(lang, callback) {
+  console.log(`I lerning ${lang}`);
+  callback();
+}
+learnJS("JS", function () {
+  console.log("Hello world");
+});*/
+
+/*const users = [
+    { name: "John Doe", accessLevel: "admin" },
+    { name: "Jane Smith", accessLevel: "user" },
+    { name: "Bob Johnson", accessLevel: "user" },
+    { name: "Alice Brown", accessLevel: "admin" },
+  ];
+  
+  const admins = users.filter((user) => user.accessLevel === "admin");
+  const person = users.filter((user) => user.accessLevel === "user");
+  
+  console.log({ admins, person });
+  
+  const lengthAdmin = admins;
+  console.log(lengthAdmin.length);
+  const lengthUser = person;
+  console.log(lengthUser.length);*/
+
+const btns = document.querySelectorAll(".counter__btn");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const direction = this.dataset.direction;
+    const inp = this.parentElement.querySelector(".counter__value");
+    const currentValue = +inp.value;
+    let newValue;
+
+    if (direction === "plus") {
+      newValue = currentValue + 1;
+    } else {
+    }
+    inp.value = newValue;
+  });
+});
