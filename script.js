@@ -111,13 +111,14 @@ learnJS("JS", function () {
 const btnPlus = document.querySelector(".counter__btn-plus");
 const btnMinus = document.querySelector(".counter__btn-minus");
 const counter = document.querySelector(".counter");
+const countValue = document.querySelector(".counter__value");
 
 let count = 0;
 
 btnPlus.addEventListener("click", (e) => {
-  btnPlus.textContent = ++count;
+  countValue.textContent = --count;
 });
 
 btnMinus.addEventListener("click", (e) => {
-  btnMinus.textContent = ++count;
+  countValue.textContent = ++count;
 });
