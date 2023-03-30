@@ -53,12 +53,12 @@ const catalog = [
   },
 ];
 
-class Products {
-  render() {
-    let htmlCatalog = "";
-    catalog.forEach(
-      ({ id, title, price, image, description, category, rating }) => {
-        htmlCatalog += `
+function renderProducts() {
+  let htmlCatalog = "";
+  catalog.forEach(
+    ({ id, title, price, image, description, category, rating }) => {
+      htmlCatalog += `
+        
             <li>
             <title>${title}</title>
             <img src ='${image}' />
@@ -70,27 +70,17 @@ class Products {
             </li>
             
             `;
-      }
-    );
-    const html = `
-        <ul>
-        ${htmlCatalog}
-        </ul>
-        `;
-
-    cardFirst.innerHTML = html;
-    cardSecond.innerHTML = html;
-    cardThird.innerHTML = html;
-    cardFourth.innerHTML = html;
-    cardFifth.innerHTML = html;
-  }
+    }
+  );
+  const html = `
+  <ul>
+  ${htmlCatalog}
+  </ul>
+  `;
+  const cardsProd = document.getElementById("1", "2", "3", "4", "5");
+  cardsProd.innerHTML = html;
 }
+renderProducts();
 
-const productsPage = new Products();
-productsPage.render();
-
-const cardFirst = document.getElementById("1");
-const cardSecond = document.getElementById("2");
-const cardThird = document.getElementById("3");
-const cardFourth = document.getElementById("4");
-const cardFifth = document.getElementById("5");
+/*const cardsProd = document.getElementById("1", "2", "3", "4", "5");
+ */
