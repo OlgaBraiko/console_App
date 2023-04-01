@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Downloads/[Udemy] [Иван Петриченко] Полный курс по JavaScript + React - с нуля до результата/02 Основы JavaScript/project"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "project"
+  }
+}
